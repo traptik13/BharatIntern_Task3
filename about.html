@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    header {
+        background-color: #50153d;
+        color: #fff;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    .content {
+        padding: 40px;
+        text-align: center;
+    }
+    .content h2 {
+        font-size: 28px;
+        color: #4b0707;
+        margin-bottom: 20px;
+    }
+    .content p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+    }
+    .skill-meter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .skill {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .skill-label {
+        font-weight: bold;
+        width: 30%;
+        text-align: right;
+    }
+    .skill-bar {
+        background-color: #ccc;
+        height: 20px;
+        width: 70%;
+        position: relative;
+    }
+    .skill-level {
+        background-color: #4b0707;
+        height: 100%;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>About Me</h2>
+        <p>Committed and goal-oriented computer science student looking to pursue a career in the software engineering domain. Ability to learn things quickly and capable of working in a team-driven environment.Constant learner and ability to adapt to new technologies. Possess strong communication and team management skills.</p>
+        
+        <!-- Skill meters -->
+        <div class="skill-meter">
+
+            <div class="skill">
+                <span class="skill-label">HTML/CSS:</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+
+            </div>
+            
+            <div class="skill">
+                <span class="skill-label">Java:</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-label">Php:</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-label">C++:</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span class="skill-label">JavaScript:</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 40%;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
